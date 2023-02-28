@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #B4F8E8 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contenedor{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+
+}
+
+/*Comienza estilo lado izquierdo*/
+.contenedor .lado_izquierdo_encabezado{
+    position: relative;
+    background: #34937D;
+    padding: 40px;
+
+}
+
+.datosIzq{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255, 0.2); /*linea divisoria lado izq*/
+
+}
+
+/*formato de la imagen*/
+.datosIzq .imagen{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.datosIzq .imagen img{
+    position: relative;
+    top: 0;
+    left:0;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*formato del nombre del cv*/
+.datosIzq h2{
+    color: #fff;
+    font-size: 1.2em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+
+}
+
+
+/*formato de la profesion del cv*/
+.datosIzq h2 span{
+    font-size: 0.7em;
+    font-weight: 300;
+}
+
+.infoContacto{
+    padding-top: 40px;
+}
+
+.titulo{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.infoContacto ul{
+    position: relative;
+}
+
+.infoContacto ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.infoContacto ul li .icono{
+        color: aquamarine;
+        font-size: 300;
+}
+
+.infoContacto ul li .texto{
+    color: #fff;
+    font-size: 300;
+    margin-left: 1em;
+}
+
+.infoContacto.educacion li{
+    margin-bottom: 15px;
+}
+
+.infoContacto.educacion h5{
+    color: aquamarine;
+    font-weight: 500;
+}
+
+.infoContacto.educacion h4{
+    color: #fff;
+    font-weight: 300;
+}
+
+.infoContacto a{
+    color: #fff;
+    font-size: 300;
+    margin-left: 1em;
+}
+
+.infoContacto.idiomas .porcentaje{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #6B6C6C;
+    display: block;
+    margin-top: 5px;
+
+}
+
+.infoContacto.idiomas .porcentaje div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #B4F8E8;
+}
+
+
+/*Comienza estilo del lado derecho*/
+.contenedor .lado_derecho{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+    
+}
+
+.informacion_derecha{
+    margin-bottom: 50px;
+}
+
+.informacion_derecha:last-child{
+    margin-bottom: 0;
+}
+
+.titulo2{
+    color: #34937D;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p{
+    color: black;
+}
+
+.informacion_derecha .laboral {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+
+}
+
+.informacion_derecha .laboral .caja {
+    min-width: 150px;
+
+}
+
+.informacion_derecha .laboral .caja h5{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+
+
+
+.informacion_derecha .laboral .texto h4{
+    text-transform: uppercase;
+    color: aquamarine;
+    font-size: 16px;
+}
+
+
+.informacion_derecha .laboral .caja h5{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+
+/**Parte para conocimientos extras*/
+.infoOtrosConocimientos ul{
+    position: relative;
+}
+
+.infoOtrosConocimientos ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.infoOtrosConocimientos ul li .icono{
+    color: aquamarine;
+    font-size: 300;
+}
+
+.infoOtrosConocimientos ul li .extras{
+    color:#848c90;
+    font-size: 300;
+    margin-left: 1em;
+}
+
+.infoOtrosConocimientos .porcentaje{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #6B6C6C;
+    display: block;
+    margin-top: 5px;
+
+}
+
+.infoOtrosConocimientos .porcentaje div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #B4F8E8;
+}
+
+/*Flecha para hacer la pagina hacia arriba*/
+.ir-arriba {
+	display:none;
+	padding:20px;
+	background: #34937D;
+	font-size:20px;
+	color: #fff;
+	cursor:pointer;
+	position: fixed;
+    border-radius: 50px;
+	bottom:20px;
+	right:400px;
+}
