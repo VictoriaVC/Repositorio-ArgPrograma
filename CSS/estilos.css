@@ -257,7 +257,7 @@ p{
     background: #B4F8E8;
 }
 
-/*Flecha para hacer la pagina hacia arriba*/
+/*Flecha para hacer la pagina hacia arriba
 .ir-arriba {
 	display:none;
 	padding:20px;
@@ -269,19 +269,37 @@ p{
     border-radius: 50px;
 	bottom:20px;
 	right:400px;
+}*/
+
+/*Ir Arriba*/
+
+.ir-arriba {
+    position: fixed;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    float: right;
+    border-radius: 50px;
+    bottom: 30px;
+    width: 60px;
+    height: 60px;
+    background: #34937D;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease;
+    right: 400px;
+    left: 1500px;
+    padding:20px;
+  }
+
+.ir-arriba span {
+  font-family: 'Material Icons';
+  color: #fafafa;
+  font-size: 50px;
+  font-weight: bold;
 }
 
-/*Flecha para hacer la pagina hacia arriba
-.ir-arriba{
-    display:none;
-    background-repeat:no-repeat;
-    font-size:20px;
-    color:black;
-    cursor:pointer;
-    position:fixed;
-    bottom:10px;
-    right:10px;
-    z-index:2;
-  }*/
-
+.ir-arriba:hover {
+  transform: scale(1.2);
+}
  
